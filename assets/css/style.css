@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-resposnsive {
+    height: 70px;
+    background-color: white;
+    box-shadow: 1px 6px 6px -4px rgba(148, 148, 148, 0.75);
+    width: 100%;
+}
+
+.logo-t724-responsive {
+    width: 200px;
+    margin-left: 25px;
+}
+
+.icon-user-t724-responsive {
+    width: 40px;
+    margin-right: 25px;
+}
+
+.icon-bars-t724-responsive {
+    width: 2px;
+    margin-right: 20px;
+}
+
+.icon-resumen-responsive {
+    width: 200px;
+}
+
+.height-50 {
+    height: 50px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.color-red {
+    color: #ED2D28;
+}
