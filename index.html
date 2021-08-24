@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="./assets/images/icons/fontawesome/css/all.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -16,53 +17,140 @@
 </head>
 
 <body>
-    <div style="display: inline;">
-        <div class="navbar-resposnsive uk-flex uk-flex-between uk-flex-middle">
-            <div>
-                <img class="logo-t724-responsive" src="./assets/images/tienda724.png" alt="">
-            </div>
-            <div class="uk-flex uk-flex-middle">
-                <img class="icon-user-t724-responsive" src="./assets/icons/icono-de-usuario.png" alt="">
-                <img class="icon-bars-t724-responsive" src="./assets/icons/menu.png" alt="">
-            </div>
+    <!-- Navbar -->
+    <div class="navbar-resposnsive uk-flex uk-flex-between uk-flex-middle">
+        <div>
+            <img class="logo-t724-responsive" src="./assets/images/tienda724.png" alt="">
         </div>
+        <div class="uk-flex uk-flex-middle">
+            <img class="icon-user-t724-responsive" src="./assets/icons/icono-de-usuario.png" alt="">
+            <img class="icon-bars-t724-responsive" src="./assets/icons/menu.png" alt="">
+        </div>
+    </div>
+    <!-- Vista principal -->
+    <div style="display: none;">
         <div>
             <div style="padding-top: 50px; padding-left: 50px;  padding-bottom: 35px;">
                 <h5 class="uk-margin-remove">Miercoles 04 de Agosto de 2021</h5>
                 <h4 class="uk-margin-remove uk-text-bold color-red">Resumen de tu tienda</h4>
             </div>
-            <div class="uk-child-width-1-2" uk-grid style="padding-right: 35px; padding-left: 25px;">
+            <div class="uk-child-width-1-2" style="padding-left: 50px; padding-right: 20px;" uk-grid>
                 <div>
-                    <div class="uk-card uk-card-hover uk-card-body">
-                        <img src="./assets/icons/icono-resumen-ventas.png" alt="">
-                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold padding-top-20">Ventas</h4>
+                    <div class="image-icons-resume">
+                        <img class="uk-align-center" src="./assets/icons/icono-resumen-ventas.png" alt="" style="width: 165px;">
+                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold">Ventas</h4>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-hover uk-card-body" style="width: 180px !important;">
-                        <img src="./assets/icons/icono-resumen-top-5.png" alt="">
-                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold padding-top-20">Top 5 productos</h4>
+                    <div class="image-icons-resume">
+                        <img class="uk-align-center" src="./assets/icons/icono-resumen-top-5.png" alt="" style="width: 300px;">
+                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold">Top 5 productos</h4>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-hover uk-card-body" style="width: 150px !important;">
-                        <img src="./assets/icons/icono-resumen-inventarios.png" alt="">
-                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold padding-top-20">Inventario</h4>
+                    <div class="image-icons-resume">
+                        <img class="uk-align-center" src="./assets/icons/icono-resumen-inventarios.png" alt="" style="width: 107px;">
+                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold">Inventario</h4>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-hover uk-card-body" style="width: 170px !important;">
-                        <img src="./assets/icons/icono-resumen-cartera.png" alt="">
-                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold padding-top-20">Cartera</h4>
+                    <div class="image-icons-resume">
+                        <img class="uk-align-center" src="./assets/icons/icono-resumen-cartera.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-center uk-text-italic uk-text-bold">Cartera</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div style="display: inline;">
+        <div class="box-shadow-down uk-flex uk-flex-middle uk-flex uk-flex-between">
+            <h5 class="uk-margin-remove">Miercoles 04 de Agosto de 2021</h5>
+            <button class="button-subnavbar-ventas">Inicio</button>
+        </div>
+        <div class="padding-horizontal-26 container-ventas-padding">
+            <div class="uk-flex uk-flex-middle uk-flex uk-flex-between padding-bottom-10">
+                <h4 class="uk-margin-remove uk-text-bold">Ventas</h4>
+                <h4 class="uk-margin-remove uk-text-bold">Utilidades</h4>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-flex-between">
+                <h5 class="uk-margin-remove widht-100 font-weight-600">Día 4:</h5>
+                <h5 class="uk-margin-remove widht-100 uk-text-right">62,000$</h5>
+                <h5 class="uk-margin-remove widht-100 uk-text-right color-green">+ 30,000$</h5>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-flex-between">
+                <h5 class="uk-margin-remove widht-100 font-weight-600">Semana 1:</h5>
+                <h5 class="uk-margin-remove widht-100 uk-text-right">726,000$</h5>
+                <h5 class="uk-margin-remove widht-100 uk-text-right color-green">+ 420,000$</h5>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-flex-between">
+                <h5 class="uk-margin-remove widht-100 font-weight-600">Mes Agosto:</h5>
+                <h5 class="uk-margin-remove widht-100 uk-text-right">2,425,300$</h5>
+                <h5 class="uk-margin-remove widht-100 uk-text-right color-green">+ 1,050,300$</h5>
+            </div>
+            <div class="uk-flex uk-flex-middle padding-container-buttons">
+                <button class="button-grey-ventas">Día</button>
+                <button class="button-grey-ventas margin-horizontal-5">Semana</button>
+                <button class="button-grey-ventas">Mes</button>
+                <h6 class="uk-margin-remove font-weight-600 padding-horizontal-10">Semana 1</h6>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-flex-between">
+                <div class="uk-flex uk-flex-middle">
+                    <i class="fas fa-circle font-size-10 color-yellow-point"></i>
+                    <h6 class="uk-margin-remove font-weight-600 padding-horizontal-5">Promedio de ventas Diario:</h6>
+                    <h6 class="uk-margin-remove">300,000$</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle">
+                    <i class="fas fa-circle font-size-10 color-green-point"></i>
+                    <h6 class="uk-margin-remove font-weight-600 padding-horizontal-5">Mayor venta</h6>
+                </div>
+            </div>
+        </div>
+        <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
