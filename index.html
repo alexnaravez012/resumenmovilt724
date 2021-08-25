@@ -62,7 +62,8 @@
             </div>
         </div>
     </div>
-    <div style="display: inline;">
+    <!-- ventas -->
+    <div style="display: none;">
         <div class="box-shadow-down uk-flex uk-flex-middle uk-flex uk-flex-between">
             <h5 class="uk-margin-remove">Miercoles 04 de Agosto de 2021</h5>
             <button class="button-subnavbar-ventas">Inicio</button>
@@ -105,9 +106,38 @@
                 </div>
             </div>
         </div>
-        <canvas id="myChart" width="400" height="300"></canvas>
+        <div class="scroll-horizontal">
+            <canvas class="uk-margin-remove" height="260" id="myChart"></canvas>
+        </div>
     </div>
-
+    <div style="display: inline;">
+        <div class="box-shadow-down uk-flex uk-flex-middle uk-flex uk-flex-between">
+            <h5 class="uk-margin-remove">Miercoles 04 de Agosto de 2021</h5>
+            <button class="button-subnavbar-ventas">Inicio</button>
+        </div>
+        <div>
+            <h6></h6>
+            <div>
+                <div>
+                    <select onfocus='this.size=3;' onblur='this.size=1;' onchange='this.size=1; this.blur();' style="font-size: 20px !important;">
+                        <option>Enero</option>
+                        <option>Febrero</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
@@ -118,10 +148,9 @@
         var myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
                 datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [, 150.000, 480.000, 590.000, 403.000, 280.000, , ],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -143,9 +172,17 @@
             },
             options: {
                 scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Días de la semana'
+                        }
+                    },
                     y: {
                         beginAtZero: true
                     }
+
                 }
             }
         });
