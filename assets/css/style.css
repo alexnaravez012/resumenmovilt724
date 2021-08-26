@@ -6,6 +6,7 @@ h5,
 h6,
 button,
 input,
+select,
 p {
     font-family: 'Roboto', sans-serif;
 }
@@ -154,4 +155,61 @@ p {
 
 .scroll-horizontal {
     margin-top: 10px;
+}
+
+.select-month {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.select-month:focus {
+    outline: 0;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.buttons-filter {
+    height: 70px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    border: 1px solid rgb(194, 194, 194);
+    color: rgb(177, 177, 177);
+}
+
+.buttons-filter:focus {
+    border: 1px solid black;
+    color: black;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.padding-top-5 {
+    padding-top: 5px;
+}
+
+.padding-vertical-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.left-20 {
+    margin-left: 20px;
+}
+
+.img-products-filter {
+    min-width: 120px;
+    max-width: 120px;
+    width: 120px;
+    height: 150px;
+    background-position: 50%;
+    background-size: 100% auto;
 }
