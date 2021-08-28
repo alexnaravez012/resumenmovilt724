@@ -50,7 +50,7 @@ p {
 }
 
 .image-icons-resume {
-    width: 130px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -132,7 +132,7 @@ p {
 }
 
 .padding-container-buttons {
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -295,8 +295,8 @@ p {
 }
 
 .icono-admiracion {
-    width: 5px;
-    height: 30px;
+    width: 3px;
+    height: 17px;
     margin-right: 10px;
 }
 
@@ -341,4 +341,16 @@ p {
 
 .padding-bottom-5 {
     padding-bottom: 5px;
+}
+
+.padding-top-30 {
+    padding-top: 30px;
+}
+
+.font-weight-800 {
+    font-weight: 800;
+}
+
+.color-grey-font {
+    color: rgb(105, 105, 105);
 }
